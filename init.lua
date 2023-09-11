@@ -50,6 +50,7 @@ vim.o.hidden = true -- Allows switching between multiple buffers (via :split and
 vim.o.hlsearch = true
 vim.o.lazyredraw = true
 vim.o.mouse = "a"
+vim.o.number = true
 vim.o.relativenumber = true
 vim.o.signcolumn = "yes"
 vim.o.spell = "yes"
