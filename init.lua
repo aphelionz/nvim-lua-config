@@ -79,6 +79,15 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
 })
 
 vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = "markdown",
+  callback = function()
+    vim.o.wrap = true
+    vim.o.linebreak = true
+    vim.api.nvim_set_hl(0, 'ColorColumn',  {})
+  end
+})
+
+vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = "cpp",
   callback = function()
     vim.api.nvim_buf_set_option(0, "tabstop", 4)
