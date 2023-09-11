@@ -36,7 +36,7 @@ vim.api.nvim_set_keymap('v', '<down>', '<nop>', { noremap = true })
 
 -- Highlighting
 vim.api.nvim_set_hl(0, 'SignColumn', { bg = "gray12" })
-vim.api.nvim_set_hl(0, 'LineNr', { fg = "gray20" })
+vim.api.nvim_set_hl(0, 'LineNr', { fg = "gray25" })
 
 -- Highlight 100th column if we go over
 vim.api.nvim_set_hl(0, 'ColorColumn',  { ctermbg = 0, bg = "magenta" })
