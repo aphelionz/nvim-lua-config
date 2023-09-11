@@ -19,7 +19,7 @@ vim.g.mapleader = " "
 vim.api.nvim_set_keymap('n', '<leader>s', ':split<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>S', ':vsplit<CR>', { noremap = true })
 -- Switch to previous buffer
-vim.api.nvim_set_keymap('n', '<leader><leader>', ':<c-^><CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader><leader>', ':bp<CR>', { noremap = true })
 -- Clear last search
 vim.api.nvim_set_keymap('n', '<leader>c', ':let @/ = ""<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', ';', ':', { noremap = true })
