@@ -4,8 +4,12 @@ vim.cmd([[
     call plug#begin('~/.local/share/nvim/plugged')
         Plug 'vim-airline/vim-airline'
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
-        Plug 'rust-lang/rust.vim'
         Plug 'github/copilot.vim'
+        Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+        Plug 'rust-lang/rust.vim'
+        Plug 'Louis-Amas/noir-vim-support'
+        Plug 'leafOfTree/vim-svelte-plugin'
     call plug#end()
 ]])
 
