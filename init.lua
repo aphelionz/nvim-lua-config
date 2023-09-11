@@ -42,7 +42,7 @@ vim.api.nvim_set_hl(0, 'LineNr', { fg = "gray25" })
 vim.api.nvim_set_hl(0, 'ColorColumn',  { ctermbg = 0, bg = "magenta" })
 vim.api.nvim_call_function('matchadd', {'ColorColumn', [[\%101v]], 100})
 
-vim.o.backup = true
+vim.o.backup = false
 vim.o.colorscheme = "default"
 vim.o.encoding = "utf-8"
 vim.o.expandtab = true
@@ -55,9 +55,9 @@ vim.o.signcolumn = "yes"
 vim.o.spell = "yes"
 vim.o.splitbelow = true
 vim.o.splitright = true
-vim.o.swapfile = false
 vim.o.synmaxcol = 300
 vim.o.syntax = true
+vim.o.swapfile = false
 vim.o.termguicolors = true
 vim.o.updatetime = 300
 vim.o.wrap = false
