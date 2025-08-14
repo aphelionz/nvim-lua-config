@@ -210,7 +210,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 vim.g.rustaceanvim = {
   server = {
     on_attach = function(client, bufnr)
-      -- keep your existing on_attach mappings:
+      -- Set up LSP-related key mappings
       if package.loaded.telescope then
         vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, { buffer = bufnr, silent = true })
       end
