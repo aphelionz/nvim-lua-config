@@ -202,7 +202,6 @@ local function on_attach(_, bufnr)
   b("n", "gl", vim.diagnostic.open_float)
   b("n", "<leader>f", function() vim.lsp.buf.format({ async = true }) end)
 end
-
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 
