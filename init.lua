@@ -222,7 +222,7 @@ vim.g.rustaceanvim = {
       vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { buffer = bufnr, silent = true })
       vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { buffer = bufnr, silent = true })
       vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format({ async = true }) end, { buffer = bufnr, silent = true })
-
+      on_attach(client, bufnr)
       -- Inlay hints (handle API changes across 0.10/0.11)
       local ih = vim.lsp.inlay_hint
       if type(ih) == "table" and ih.enable then
